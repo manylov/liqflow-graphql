@@ -17,7 +17,7 @@ const main = async () => {
     debug: true,
     connection: {
       connectionString,
-      ssl: Boolean(process.env.DB_SSL) ?? true,
+      ssl: Boolean(process.env.DB_SSL) ?? false,
     },
     searchPath: ['knex', 'public'],
     // ...knexSnakeCaseMappers(),
